@@ -204,7 +204,17 @@ function loadData() {
   // Poemas
   const savedPoems = localStorage.getItem(STORAGE_POEMS);
   if (savedPoems) {
-    try { poems = JSON.parse(savedPoems); } catch(e) { poems = []; }
+   try {
+poems = JSON.parse(savedPoems);
+} catch(e) {
+poems = [
+{
+title: "Deseos",
+date: "2 Mayo 2026",
+body: "Lo logre?."
+}
+];
+}
   }
 
   // Perfil

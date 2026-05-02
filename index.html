@@ -202,10 +202,6 @@ let poems = [];
 // ── CARGAR DATOS GUARDADOS ──
 function loadData() {
   // Poemas
-  const savedPoems = localStorage.getItem(STORAGE_POEMS);
-  if (savedPoems) {
-   try {
-poems = JSON.parse(savedPoems);
 } catch(e) {
 poems = [
 {
